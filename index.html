@@ -1,0 +1,28 @@
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script src="./Tone.min.js"></script>
+<script src="./metrodrone.js"></script>
+<style>
+    BODY {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    H1 {
+        margin: 0;
+    }
+    INPUT {
+        width: 50%;
+    }
+</style>
+<body>
+    <input type="range" min="50" max="180" value="110" class="slider" id="metronome">
+    <h1 id="metronome_value"></h1>
+    <h1 id="metronome_start">start</h1>
+    <h1 id="metronome_stop">stop</h1>
+    <h1>~</h1>
+    <div id="notes"></div>
+    <h1 id="drone_stop">stop</h1>
+</body>
