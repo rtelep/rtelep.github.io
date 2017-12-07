@@ -4,7 +4,7 @@ var notes = [
     ,   ['G', 'G2', 'D3']
     ,   ['F', 'F2', 'C3']
     ,   ['Bb','Bb2','F3']
-    ,	['C', 'C2,  'G3']
+    ,	['C', 'C2',  'G3']
 ];
 
 function Drone(){
