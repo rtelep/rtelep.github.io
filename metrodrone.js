@@ -1,11 +1,14 @@
-var notes = [
+var NOTES = [
         ['E', 'E2', 'B2']
     ,   ['D', 'D2', 'A2']
     ,   ['G', 'G2', 'D3']
     ,   ['F', 'F2', 'C3']
     ,   ['Bb','Bb2','F3']
+    ,   ['Eb','Eb2','Bb2']
     ,	['C', 'C2',  'G3']
 ];
+
+var BPM = 112;
 
 function Drone(){
     
@@ -84,7 +87,7 @@ function Metronome(){
 $(document).ready(function() {
     drone = new Drone();
     
-    $.each(notes, function(n, note){
+    $.each(NOTES, function(n, note){
         var button = $('<h1>')
             .attr('drone', note[1])
             .attr('chant', note[2])
@@ -114,6 +117,7 @@ $(document).ready(function() {
     var output = $('#metronome_value');
     var start = $('#metronome_start');
     var stop = $('#metronome_stop');
+    slider.val(BPM);
     var tempo = slider.val();
     Tone.Transport.bpm.value = tempo;
     output.html(tempo);
